@@ -94,3 +94,105 @@ def to_uppercase(word):
     return word.upper()
 
 print(to_uppercase("hello"))
+# %%
+# 13
+class A:
+    def __init__(self, num):
+        num = 3
+        self.num = num
+    
+    def change(self):
+        self.num = 7
+
+a = A(5)
+print(a.num)  # Tahmin?
+a.change()
+print(a.num)  # Tahmin?
+
+# %%
+# 14
+class B:
+    num = 10  
+
+    def __init__(self, num):
+        self.num = num  
+
+b = B(5)
+print(B.num)  # Tahmin?
+print(b.num)  # Tahmin?
+
+# %%
+# 15
+class C:
+    def __init__(self, value):
+        self.value = value
+
+    def double(self):
+        return self.value * 2
+
+    def update(self, new_value):
+        self.value = new_value
+
+c = C(4)
+print(c.double())  # Tahmin?
+c.update(10)
+print(c.double())  # Tahmin?
+
+# %%
+# 16
+class D:
+    def __init__(self, items):
+        self.items = items
+
+    def add_item(self, item):
+        self.items.append(item)
+
+d = D([1, 2, 3])
+print(d.items)  # Tahmin?
+d.add_item(4)
+print(d.items)  # Tahmin?
+
+# %%
+# 17
+class E:
+    def __init__(self, x=5):
+        self.x = x
+
+    def add(self, y):
+        self.x += y
+
+e = E()
+print(e.x)  # Tahmin?
+e.add(10)
+print(e.x)  # Tahmin?
+
+# %%
+# 18
+class F:
+    def __init__(self, x):
+        self.__x = x  
+
+    def get_x(self):
+        return self.__x
+
+    def set_x(self, value):
+        self.__x = value
+
+f = F(5)
+print(f.get_x())  # Tahmin?
+f.set_x(10)
+print(f.get_x())  # Tahmin?
+
+# %%
+# 19
+class G:
+    def __init__(self, value):
+        self.value = value
+
+g1 = G(5)
+g2 = g1
+g2.value = 10
+print(g1.value)  # Tahmin?
+print(g2.value)  # Tahmin?
+
+
