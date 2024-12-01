@@ -1,0 +1,5 @@
+Soru:
+
+- Bir soyut sınıf User oluşturun. User sınıfında ad ve ID attributeları yer alsın. Bu sınıfta introduce ve task adında soyut metotlar tanımlayın.
+- Student ve Teacher sınıflarını oluşturun. Her biri User sınıfından türetilmeli ve soyut metotları kendine uygun şekilde doldurmalı.
+- ID bilgisine sadece sınıf içinden erişilmesini sağlayın (encapsulation).
